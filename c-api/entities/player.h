@@ -234,12 +234,12 @@ EXPORT_SERVER int32_t Player_GetAmmoMax50(alt::IPlayer* player, uint32_t ammoHas
 EXPORT_SERVER void Player_SetAmmoMax100(alt::IPlayer* player, uint32_t ammoHash, int32_t ammoMax100);
 EXPORT_SERVER int32_t Player_GetAmmoMax100(alt::IPlayer* player, uint32_t ammoHash);
 
-EXPORT_SERVER void Player_AddDecoration(alt::IPlayer* player, uint32_t collection, uint32_t overlay);
+EXPORT_SERVER void Player_AddDecoration(alt::IPlayer* player, uint32_t collection, uint32_t overlay, uint8_t count);
 EXPORT_SERVER void Player_RemoveDecoration(alt::IPlayer* player, uint32_t collection, uint32_t overlay);
 EXPORT_SERVER void Player_ClearDecorations(alt::IPlayer* player);
 
 EXPORT_SERVER ClrDecoration** Player_GetDecorations(alt::IPlayer* player, uint64_t& size);
-EXPORT_SERVER void Player_DeallocVehicleModelInfo(ClrDecoration** decoInfo);
+EXPORT_SERVER void Player_DeallocDecoration(ClrDecoration** decoInfo);
 
 EXPORT_SERVER void Player_PlayScenario(alt::IPlayer* player, const char* name);
 
